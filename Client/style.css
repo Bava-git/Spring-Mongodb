@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+}
+
+.Container {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+    margin-bottom: 30px;
+}
+
+.field {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
+.BnContainer {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+}
+
+.submitBn {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.resultviewContainer {
+    padding: 10px;
+    margin: 10px;
+}
+
+.resultviewContainer th,
+td {
+    text-align: center;
+}

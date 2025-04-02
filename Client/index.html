@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Mongodb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Container">
+        <form action="">
+            <h1 class="title">Add Employee</h1>
+            <div class="field">
+                <label for="employeeid">Employee ID:</label>
+                <input type="text" id="employeeid" class="AllInputBox" placeholder="Employee ID">
+            </div>
+            <div class="field">
+                <label for="employeename">Employee Name:</label>
+                <input type="text" id="employeename" class="AllInputBox" placeholder="Employee Name">
+            </div>
+            <div class="field">
+                <label for="employeeemail">Employee Email:</label>
+                <input type="text" id="employeeemail" class="AllInputBox" placeholder="Employee Email">
+            </div>
+            <div class="field">
+                <label for="employeelocation">Employee Location:</label>
+                <input type="text" id="employeelocation" class="AllInputBox" placeholder="Employee Location">
+            </div>
+            <div class="BnContainer">
+                <button class="submitBn" id="submitBn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="Container">
+        <h1 class="title">Get Employees</h1>
+        <div class="BnContainer">
+            <button class="submitBn" id="getBn">Get</button>
+        </div>
+        <div class="resultviewContainer" id="resultviewContainer">
+
+        </div>
+    </div>
+    <div class="Container">
+        <h1 class="title">Get Employee by Employee Id</h1>
+        <div class="field">
+            <label for="employeeid">Employee ID:</label>
+            <input type="text" id="get-employeeid" placeholder="Employee ID">
+        </div>
+        <div class="BnContainer">
+            <button class="submitBn" id="getwithidBn">Get</button>
+        </div>
+        <div class="resultviewContainer" id="getwithid-resultviewContainer">
+
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
