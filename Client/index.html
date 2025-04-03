@@ -10,23 +10,23 @@
 
 <body>
     <div class="Container">
-        <form action="">
+        <form action="" id="form">
             <h1 class="title">Add Employee</h1>
             <div class="field">
                 <label for="employeeid">Employee ID:</label>
-                <input type="text" id="employeeid" class="AllInputBox" placeholder="Employee ID">
+                <input type="text" id="employeeid" class="AllInputBox" placeholder="Employee ID" required>
             </div>
             <div class="field">
                 <label for="employeename">Employee Name:</label>
-                <input type="text" id="employeename" class="AllInputBox" placeholder="Employee Name">
+                <input type="text" id="employeename" class="AllInputBox" placeholder="Employee Name" required>
             </div>
             <div class="field">
                 <label for="employeeemail">Employee Email:</label>
-                <input type="text" id="employeeemail" class="AllInputBox" placeholder="Employee Email">
+                <input type="email" id="employeeemail" class="AllInputBox" placeholder="Employee Email" required>
             </div>
             <div class="field">
                 <label for="employeelocation">Employee Location:</label>
-                <input type="text" id="employeelocation" class="AllInputBox" placeholder="Employee Location">
+                <input type="text" id="employeelocation" class="AllInputBox" placeholder="Employee Location" required>
             </div>
             <div class="BnContainer">
                 <button class="submitBn" id="submitBn">Submit</button>

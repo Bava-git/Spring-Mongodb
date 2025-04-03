@@ -7,6 +7,14 @@ document.getElementById("submitBn").addEventListener('click', async (event) => {
     let employeeEmail = document.getElementById('employeeemail').value;
     let employeeLocation = document.getElementById('employeelocation').value;
 
+    let inputs = document.querySelectorAll('.AllInputBox');
+    for (let i = 0; i < inputs.length; i++) {
+        if (inputs[i].value === "") {
+            alert("Invaild " + inputs[i].id);
+            return false;
+        }
+    }
+
     let employeeDetails = { employeeId, employeeName, employeeEmail, employeeLocation }
 
     try {
@@ -19,11 +27,7 @@ document.getElementById("submitBn").addEventListener('click', async (event) => {
         });
         if (response.ok) {
             alert("Employee added");
-
-            document.querySelectorAll('.AllInputBox').forEach((input) => {
-                input.value = "";
-            });
-
+            document.getElementById("form").reset();
         }
     } catch (error) {
         console.error("Fetch error:", error);
